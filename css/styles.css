@@ -16,7 +16,7 @@ html, body {
 body {
     font-family: "Nunito", sans-serif;
     text-align: center;
-    background: rgba(235, 235, 235, 0.9);
+    background: rgba(28, 13, 65, 0.8);
 }
 
 header {
@@ -30,7 +30,7 @@ header {
 
 header h1 {
     font-size: 1.25em;
-    color: rgba(50, 50, 50, 0.9);
+    color: rgba(235, 235, 235, 0.9);
     margin-top: 35px;
 }
 
@@ -142,7 +142,7 @@ header h1 {
     padding-bottom: 15px;
     background: rgba(255, 255, 255, 1);
     border-radius: 0.25em;
-    border: 1px solid rgba(100, 100, 100, 0.3);
+    border: 5px solid rgba(28, 13, 65, 0.8);
     transition: .4s ease-out;
 }
 
@@ -155,7 +155,7 @@ header h1 {
     background: rgba(0, 0, 0, 0.8);
     outline: none;
     border-radius: 0.25em;
-    border: 1px solid rgba(50, 50, 50, 0.3);
+    border: 1px solid rgba(28, 13, 65, 0.8);
 }
 
 .modal-img {
@@ -190,7 +190,7 @@ header h1 {
     margin: 10px auto auto;
     background: rgba(255, 255, 255, 1);
     border-radius: 0.25em;
-    border: 1px solid rgba(100, 100, 100, 0.3);
+    border: 5px solid rgba(28, 13, 65, 0.8);
 }
 
 
@@ -201,7 +201,7 @@ header h1 {
     text-transform: uppercase;
     color: rgba(255, 255, 255, 0.9);
     padding: 0.75em 1.5em;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(28, 13, 65, 0.8);
     border-radius: 0.35em;
     transition: .4s ease-out;
     outline: none;

@@ -66,7 +66,7 @@ function generateEmployeeModalWindow(person) {
                 <p class="modal-text">${person.email}</p>
                 <p class="modal-text cap">${person.location.city}</p>
                 <hr>
-                <p class="modal-text">${person.cell}</p>
+                <p class="modal-text">${person.phone}</p>
                 <p class="modal-text">${person.location.street.number} ${person.location.street.name}, ${person.location.city}, ${person.location.state} ${person.location.postcode}</p>
                 <p class="modal-text">Birthday: ${birthday.toLocaleDateString("en-US")}</p>
             </div>
@@ -80,18 +80,28 @@ function generateEmployeeModalWindow(person) {
     </div>`;
     //cellNumberParts.substr(0,3)} ${cellNumberParts.substr(3,3)}-${cellNumberParts.substr(6,4) couldn't get this to work
     document.body.insertAdjacentHTML("beforeend", employeeModal);
-    const closebtn = document.getElementById('modal-close-btn');
-    const modalContainer = document.querySelector('.modal-container');
+
+    /****************
+    * Event Listeners
+    ****************/
+   const closebtn = document.getElementById('modal-close-btn');
+   const modalContainer = document.querySelector('.modal-container');
+   const prevButton = document.querySelector('#modal-prev');
+   const nextButton = document.querySelector('#modal-next');
 
     closebtn.addEventListener('click', () => {
         modalContainer.remove();
     });
 
-    // modalContainer.addEventListener('click', () => {
-    //     modalContainer.remove();
-    // });
+    prevButton.addEventListener('click', () => {
+        modalContainer.remove();
+        generateEmployeeModalWindow(person);
 
+
+    });
+
+    nextButton.addEventListener('click', () => {
+
+    });
 }
-/****************
-* Event Listeners
-****************/
+
